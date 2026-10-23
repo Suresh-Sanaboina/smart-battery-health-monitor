@@ -1,0 +1,10 @@
+TestCase,Voltage_V,Current_A,Temperature_C,ExpectedResult
+Normal,12.4,2.1,32,NORMAL
+Undervoltage,10.5,2.1,32,UNDERVOLTAGE
+Overvoltage,15.0,2.1,32,OVERVOLTAGE
+Overcurrent,12.4,6.2,32,OVERCURRENT
+Overtemperature,12.4,2.1,50,HIGH_TEMPERATURE
+MultipleFaults,10.5,6.2,50,UNDERVOLTAGE|OVERCURRENT|HIGH_TEMPERATURE
+BoundaryThresholds,11.0,5.0,45,NORMAL
+InvalidNegativeVoltage,-0.1,1.0,20,INVALID
+InvalidNegativeCurrent,12.0,-0.1,20,INVALID
